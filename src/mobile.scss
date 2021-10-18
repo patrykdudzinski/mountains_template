@@ -1,0 +1,88 @@
+@media (max-width: 1440px) {
+    .bottom_wrapper::before {
+        top: -1150px;
+    }
+    .hero_section .app_section__content .green_box {
+        max-width: 60vw;
+    }
+    .hero_section .app_section__content .small-photo{
+        left: 600px;
+        max-width: 57vw;
+    }
+    .green_box__content {
+        max-height: 250px;
+    }
+    .banner_wrapper__img{
+        height: 59vh;
+        bottom: 91px;
+    }
+    .users_carousel{
+        .green_box__content{
+            max-height: 100%;
+        }
+    }
+    .green_box.full{
+        .green_box__content {
+            max-height: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 810px) {
+    body{
+        overflow-x: hidden;
+    }
+    .banner_wrapper__img{
+        display: none;
+    }
+    .banner_wrapper__video {
+        height: 23vh;
+        margin: auto;
+    }
+    footer .hiker_img::before {
+        display: none;
+    }
+    footer .moutains_img::before {
+        display: none;
+    }
+    footer::before {
+        border-width: 30vw 51vw;
+        border-color: transparent transparent #969697;
+        opacity: 1;
+        left: -20px;
+    }
+    .bottom_wrapper::before {
+        top: -250px;
+        border-width: 29vw 50vw;
+        left: 0px;
+    }
+    .users_carousel .green_box {
+        padding: 0px 20vw;
+    }
+    .app_section__title{
+        letter-spacing: 30px;
+    }
+    .header_list{
+        justify-content: center;
+    }
+    .app_section__subtitle{
+        width: 100%;
+        right: 0px;
+    }
+    .hero_section .app_section__content .small-photo {
+        left: 0px;
+        max-width: 100vw;
+        min-width: 460px;
+    }
+    .hero_section .app_section__content .green_box {
+        max-width: 82vw;
+        margin: 0px auto;
+        top: 30px;
+    }
+    .users_carousel{
+        .green_box__content p {
+            max-width: 90%;
+        }
+    }
+}

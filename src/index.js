@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './app.scss';
+import './mobile.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

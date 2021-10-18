@@ -187,7 +187,7 @@ body{
     position: relative;
     bottom: 25vh;
     .green_box{
-        max-height: 40vh;
+        // max-height: 40vh;
         &.gray{
             background-color: $gray_shadow;
             position: relative;
@@ -302,36 +302,43 @@ body{
     margin: auto;
     box-shadow: 0px 2px 10px 5px #75626269;
 }
-.footer_wrapper__content{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    max-height: 100px;
-    background: transparent;
-    position: relative;
-    z-index: 1;
 
-    & .icon{
-        width: 40px;
-        height: 40px;
-        margin: 0px 20px;
-        background-size: contain !important;
-        background-repeat: no-repeat !important;
-        &:hover{
-            width: 60px;
-            height: 60px;
-        }
-        &.icon_pinterest{
-            background: url('./img/pinterest-128.png');
-        }
-        &.icon_facebook{
-            background: url('./img/facebook-128.png');
-        }
-        &.icon_twitter{
-            background: url('./img/twitter-128.png');
-        }
-        &.icon_instagram{
-            background: url('./img/instagram-128.png');
+.footer_wrapper{
+    position: relative;
+    top: 0px;
+    &__content{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        max-height: 100px;
+        background: transparent;
+        position: relative;
+        // top: -150%;
+        padding-bottom: 50px;
+        z-index: 1;
+
+        & .icon{
+            width: 40px;
+            height: 40px;
+            margin: 0px 20px;
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+            &:hover{
+                width: 60px;
+                height: 60px;
+            }
+            &.icon_pinterest{
+                background: url('./img/pinterest-128.png');
+            }
+            &.icon_facebook{
+                background: url('./img/facebook-128.png');
+            }
+            &.icon_twitter{
+                background: url('./img/twitter-128.png');
+            }
+            &.icon_instagram{
+                background: url('./img/instagram-128.png');
+            }
         }
     }
 }
@@ -343,13 +350,13 @@ footer{
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 0 171vh 260vw;
+        border-width: 0 0 171vh 360vw;
         border-color: transparent transparent $app_green;
         opacity: 0.7;
-        position: relative;
+        position: absolute;
         z-index: 1;
-        top: -1454px;
         left: -30px;
+        bottom: 0px;
         pointer-events: none;
     }
     .hiker_img{
@@ -365,8 +372,7 @@ footer{
             display: inline-block;
             width: 45vw;
             right: -90px;
-            top: 1747px;
-            pointer-events: none;
+            bottom: 0px;
         }
     }
     .moutains_img{
@@ -382,7 +388,7 @@ footer{
             display: block;
             width: 45vw;
             left: -20px;
-            top: 2118px;
+            bottom: 0px;
         }
     }
 }
